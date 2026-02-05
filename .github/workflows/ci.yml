@@ -15,5 +15,5 @@ jobs:
     needs: test
     steps:
       - uses: actions/checkout@v4
-      - name: docker
-        run: docker build -t cart
+      - run: docker build -t cart .
+        name: docker build
