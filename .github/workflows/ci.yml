@@ -15,5 +15,9 @@ jobs:
     needs: test
     steps:
       - uses: actions/checkout@v4
-      - run: docker build -t cart .
+      - name: docker login
+        run: from ecr
+      - run: docker build -t 389841108590.dkr.ecr.us-east-1.amazonaws.com/cart .
+        name: docker build
+      - run: docker push -t 389841108590.dkr.ecr.us-east-1.amazonaws.com/cart
         name: docker build
