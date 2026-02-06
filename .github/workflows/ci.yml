@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: docker login
-        run: from ecr
+        run: aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 389841108590.dkr.ecr.us-east-1.amazonaws.com
       - run: docker build -t 389841108590.dkr.ecr.us-east-1.amazonaws.com/cart .
         name: docker build
       - run: docker push -t 389841108590.dkr.ecr.us-east-1.amazonaws.com/cart
