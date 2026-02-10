@@ -21,7 +21,7 @@ on:
 
 jobs:
   ci_cd_common:
-    uses: sdevops5427/reusable-github-actions/.github/workflows/ci.yml@main
+    uses: "sdevops5427/reusable-github-actions/.github/workflows/ci.yml@main"
     with:
       component: cart
       appType: nodejs
