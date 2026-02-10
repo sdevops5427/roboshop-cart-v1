@@ -1,12 +1,27 @@
+#name: Cart CI
+#on:
+#  push:
+#    branches: [ "main" ]
+#  workflow_dispatch:
+#jobs:
+#  ci_cd_common:
+#    #https://github.com/sdevops5427/roboshop-cart-v1
+#    uses: sdevops5427/reusable-github-actions/.github/workflows/ci.yml@main
+#    with:
+#      component: cart
+#      appType: nodejs
+
+
 name: Cart CI
+
 on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
+
 jobs:
   ci_cd_common:
-    #https://github.com/sdevops5427/roboshop-cart-v1
-    uses: reusable-github-actions/.github/workflows/ci.yml@main
+    uses: sdevops5427/reusable-github-actions/.github/workflows/ci.yml@main
     with:
       component: cart
       appType: nodejs
