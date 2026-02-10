@@ -6,7 +6,7 @@ on:
 jobs:
   ci_cd_common:
     #https://github.com/sdevops5427/roboshop-cart-v1
-    uses: sdevops5427/reusable-github-actions/.github/workflows/ci.yml@main
+    uses: reusable-github-actions/.github/workflows/ci.yml@main
     with:
       component: cart
       appType: nodejs
