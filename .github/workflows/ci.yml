@@ -5,7 +5,10 @@ on:
   workflow_dispatch:
 jobs:
   ci_cd_common:
-    uses: sdevops5427/reusable-github-actions/.github/workflows/ci.yml@main
+    #https://github.com/sdevops5427/roboshop-cart-v1
+    uses: https://github.com/sdevops5427/reusable-github-actions/.github/workflows/ci.yml@main
     with:
       component: cart
       appType: nodejs
+
+      
