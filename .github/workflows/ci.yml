@@ -50,3 +50,4 @@ jobs:
         name: docker build
       - run: docker push 389841108590.dkr.ecr.us-east-1.amazonaws.com/cart
         name: docker build
+
