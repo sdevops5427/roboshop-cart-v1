@@ -15,8 +15,6 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm ci
-
 COPY server.js ./
 
 # Stage 2 - Runtime
