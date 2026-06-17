@@ -28,4 +28,4 @@ WORKDIR /app
 
 COPY --from=builder /app /app
 
-CMD ["node", "server.js"]
+ENTRYPOINT ["node", "server.js"]
